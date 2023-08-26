@@ -1,0 +1,23 @@
+[project]
+name = "leavesmc_api"
+version = "0.1.0"
+description = "webapi for leavesmc website"
+authors = [
+    {name = "z0z0r4",email = "z0z0r4@outlook.com"},
+]
+dependencies = [
+    "fastapi==0.100.1",
+    "GitPython==3.1.32",
+    "pydantic==1.10.7",
+    "Requests==2.31.0",
+    "SQLAlchemy==1.4.46",
+    "uvicorn==0.23.1",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

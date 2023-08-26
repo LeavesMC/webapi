@@ -1,0 +1,16 @@
+[Unit]
+Description=leavesmc_api
+Documentation=https://api.leavesmc.top
+
+[Service]
+WorkingDirectory=/opt/leavesmc/webapi
+ExecStart=sh /opt/leavesmc/webapi/start.sh
+Restart=on-abnormal
+RestartSec=5s
+KillMode=mixed
+
+StandardOutput=null
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
