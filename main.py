@@ -37,7 +37,7 @@ app = FastAPI(description="LeavesMC website API", version="0.1.0", title="Leaves
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex="https://.*\.leavesmc\.top",
+    allow_origin_regex="https://.*\.leavesmc\.(top|org)",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
